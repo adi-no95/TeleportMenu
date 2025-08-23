@@ -1,7 +1,7 @@
 local _, tpm = ...
 local L = LibStub("AceLocale-3.0"):GetLocale("TeleportMenu")
 
-local GetItemCount, GetItemNameByID, GetItemIconByID, sort, push = C_Item.GetItemCount, C_Item.GetItemNameByID, C_Item.GetItemIconByID, sort, table.insert
+local GetItemCount, sort, push = GetItemCount, sort, table.insert
 
 --- @type { [string|integer]: boolean|string|integer }
 tpm.SettingsBase = {
@@ -59,8 +59,8 @@ function tpm:SourceItemTeleportScrollBoxes(onSourceComplete)
 			local items = (GetItemCount(id) > 0 and items_in_possession) or items_to_be_obtained
 			push(items, {
 				id = id,
-				name = GetItemNameByID(id),
-				icon = GetItemIconByID(id),
+				name = C_Item.GetItemNameByID(id),
+				icon = C_Item.GetItemIconByID(id),
 			})
 
 			if #items > 1 then

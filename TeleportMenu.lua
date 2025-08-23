@@ -36,73 +36,73 @@ local shortNames = {
 	[131229] = L["Scarlet Monastery"],
 	[131231] = L["Scarlet Halls"],
 	[131232] = L["Scholomance"],
-	-- WoD
-	[159901] = L["The Everblooml"],
-	[159899] = L["Shadowmoon Burial Grounds"],
-	[159900] = L["Grimrail Depot"],
-	[159896] = L["Iron Docks"],
-	[159895] = L["Bloodmaul Slag Mines"],
-	[159897] = L["Auchindoun"],
-	[159898] = L["Skyreach"],
-	[159902] = L["Upper Blackrock Spire"],
-	-- Legion
-	[393764] = L["Halls of Valor"],
-	[410078] = L["Neltharion's Lair"],
-	[393766] = L["Court of Stars"],
-	[373262] = L["Karazhan"],
-	[424153] = L["Black Rook Hold"],
-	[424163] = L["Darkheart Thicket"],
-	-- BFA
-	[410071] = L["Freehold"],
-	[410074] = L["The Underrot"],
-	[373274] = L["Mechagon"],
-	[424167] = L["Waycrest Manor"],
-	[424187] = L["Atal'Dazar"],
-	[445418] = L["Siege of Boralus"],
-	[464256] = L["Siege of Boralus"],
-	[467553] = L["The MOTHERLODE!!"],
-	[467555] = L["The MOTHERLODE!!"],
-	-- SL
-	[354462] = L["The Necrotic Wake"],
-	[354463] = L["Plaguefall"],
-	[354464] = L["Mists of Tirna Scithe"],
-	[354465] = L["Halls of Atonement"],
-	[354466] = L["Bastion"],
-	[354467] = L["Theater of Pain"],
-	[354468] = L["De Other Side"],
-	[354469] = L["Sanguine Depths"],
-	[367416] = L["Tazavesh, the Veiled Market"],
-	-- SL R
-	[373190] = L["Castle Nathria"],
-	[373191] = L["Sanctum of Domination"],
-	[373192] = L["Sepulcher of the First Ones"],
-	-- DF
-	[393256] = L["Ruby Life Pools"],
-	[393262] = L["The Nokhud Offensive"],
-	[393267] = L["Brackenhide Hollow"],
-	[393273] = L["Algeth'ar Academy"],
-	[393276] = L["Neltharus"],
-	[393279] = L["The Azure Vault"],
-	[393283] = L["Halls of Infusion"],
-	[393222] = L["Uldaman"],
-	[424197] = L["Dawn of the Infinite"],
-	-- DF R
-	[432254] = L["Vault of the Incarnates"],
-	[432257] = L["Aberrus, the Shadowed Crucible"],
-	[432258] = L["Amirdrassil, the Dream's Hope"],
-	-- TWW
-	[445416] = L["City of Threads"],
-	[445414] = L["The Dawnbreaker"],
-	[445269] = L["The Stonevault"],
-	[445443] = L["The Rookery"],
-	[445440] = L["Cinderbrew Meadery"],
-	[445444] = L["Priory of the Sacred Flame"],
-	[445417] = L["Ara-Kara, City of Echoes"],
-	[445441] = L["Darkflame Cleft"],
-	[1216786] = L["Operation: Floodgate"],
-	[1237215] = L["Eco-Dome Al'dani"],
-	-- TWW R
-	[1226482] = L["Liberation of Undermine"],
+	-- -- WoD
+	-- [159901] = L["The Everblooml"],
+	-- [159899] = L["Shadowmoon Burial Grounds"],
+	-- [159900] = L["Grimrail Depot"],
+	-- [159896] = L["Iron Docks"],
+	-- [159895] = L["Bloodmaul Slag Mines"],
+	-- [159897] = L["Auchindoun"],
+	-- [159898] = L["Skyreach"],
+	-- [159902] = L["Upper Blackrock Spire"],
+	-- -- Legion
+	-- [393764] = L["Halls of Valor"],
+	-- [410078] = L["Neltharion's Lair"],
+	-- [393766] = L["Court of Stars"],
+	-- [373262] = L["Karazhan"],
+	-- [424153] = L["Black Rook Hold"],
+	-- [424163] = L["Darkheart Thicket"],
+	-- -- BFA
+	-- [410071] = L["Freehold"],
+	-- [410074] = L["The Underrot"],
+	-- [373274] = L["Mechagon"],
+	-- [424167] = L["Waycrest Manor"],
+	-- [424187] = L["Atal'Dazar"],
+	-- [445418] = L["Siege of Boralus"],
+	-- [464256] = L["Siege of Boralus"],
+	-- [467553] = L["The MOTHERLODE!!"],
+	-- [467555] = L["The MOTHERLODE!!"],
+	-- -- SL
+	-- [354462] = L["The Necrotic Wake"],
+	-- [354463] = L["Plaguefall"],
+	-- [354464] = L["Mists of Tirna Scithe"],
+	-- [354465] = L["Halls of Atonement"],
+	-- [354466] = L["Bastion"],
+	-- [354467] = L["Theater of Pain"],
+	-- [354468] = L["De Other Side"],
+	-- [354469] = L["Sanguine Depths"],
+	-- [367416] = L["Tazavesh, the Veiled Market"],
+	-- -- SL R
+	-- [373190] = L["Castle Nathria"],
+	-- [373191] = L["Sanctum of Domination"],
+	-- [373192] = L["Sepulcher of the First Ones"],
+	-- -- DF
+	-- [393256] = L["Ruby Life Pools"],
+	-- [393262] = L["The Nokhud Offensive"],
+	-- [393267] = L["Brackenhide Hollow"],
+	-- [393273] = L["Algeth'ar Academy"],
+	-- [393276] = L["Neltharus"],
+	-- [393279] = L["The Azure Vault"],
+	-- [393283] = L["Halls of Infusion"],
+	-- [393222] = L["Uldaman"],
+	-- [424197] = L["Dawn of the Infinite"],
+	-- -- DF R
+	-- [432254] = L["Vault of the Incarnates"],
+	-- [432257] = L["Aberrus, the Shadowed Crucible"],
+	-- [432258] = L["Amirdrassil, the Dream's Hope"],
+	-- -- TWW
+	-- [445416] = L["City of Threads"],
+	-- [445414] = L["The Dawnbreaker"],
+	-- [445269] = L["The Stonevault"],
+	-- [445443] = L["The Rookery"],
+	-- [445440] = L["Cinderbrew Meadery"],
+	-- [445444] = L["Priory of the Sacred Flame"],
+	-- [445417] = L["Ara-Kara, City of Echoes"],
+	-- [445441] = L["Darkflame Cleft"],
+	-- [1216786] = L["Operation: Floodgate"],
+	-- [1237215] = L["Eco-Dome Al'dani"],
+	-- -- TWW R
+	-- [1226482] = L["Liberation of Undermine"],
 	-- Mage teleports
 	[3561] = L["Stormwind"],
 	[3562] = L["Ironforge"],
@@ -122,15 +122,15 @@ local shortNames = {
 	[120145] = L["Dalaran - Ancient"],
 	[132621] = L["Vale of Eternal Blossoms"], -- Alliance
 	[132627] = L["Vale of Eternal Blossoms"], -- Horde
-	[176242] = L["Warspear"],
-	[176248] = L["Stormshield"],
-	[193759] = L["Hall of the Guardian"],
-	[224869] = L["Dalaran - Broken Isles"],
-	[281403] = L["Boralus"],
-	[281404] = L["Dazar'alor"],
-	[344587] = L["Oribos"],
-	[395277] = L["Valdrakken"],
-	[446540] = L["Dornogal"],
+	-- [176242] = L["Warspear"],
+	-- [176248] = L["Stormshield"],
+	-- [193759] = L["Hall of the Guardian"],
+	-- [224869] = L["Dalaran - Broken Isles"],
+	-- [281403] = L["Boralus"],
+	-- [281404] = L["Dazar'alor"],
+	-- [344587] = L["Oribos"],
+	-- [395277] = L["Valdrakken"],
+	-- [446540] = L["Dornogal"],
 	-- Mage portals
 	[10059] = L["Stormwind"],
 	[11416] = L["Ironforge"],
@@ -150,24 +150,24 @@ local shortNames = {
 	[120146] = L["Dalaran - Ancient"],
 	[132620] = L["Vale of Eternal Blossoms"], -- Alliance
 	[132626] = L["Vale of Eternal Blossoms"], -- Horde
-	[176244] = L["Warspear"],
-	[176246] = L["Stormshield"],
-	[224871] = L["Dalaran - Broken Isles"],
-	[281400] = L["Boralus"],
-	[281402] = L["Dazar'alor"],
-	[344597] = L["Oribos"],
-	[395289] = L["Valdrakken"],
-	[446534] = L["Dornogal"],
+	-- [176244] = L["Warspear"],
+	-- [176246] = L["Stormshield"],
+	-- [224871] = L["Dalaran - Broken Isles"],
+	-- [281400] = L["Boralus"],
+	-- [281402] = L["Dazar'alor"],
+	-- [344597] = L["Oribos"],
+	-- [395289] = L["Valdrakken"],
+	-- [446534] = L["Dornogal"],
 }
 
 local tpTable = {
 	-- Hearthstones
 	{ id = 6948, type = "item", hearthstone = true }, -- Hearthstone
 	{ id = 556, type = "spell" }, -- Astral Recall (Shaman)
-	{ id = 110560, type = "toy", quest = { 34378, 34586 } }, -- Garrison Hearthstone
-	{ id = 140192, type = "toy", quest = { 44184, 44663 } }, -- Dalaran Hearthstone
+	-- { id = 110560, type = "toy", quest = { 34378, 34586 } }, -- Garrison Hearthstone
+	-- { id = 140192, type = "toy", quest = { 44184, 44663 } }, -- Dalaran Hearthstone
 	-- Engineering
-	{ type = "wormholes", iconId = 4620673 }, -- Engineering Wormholes
+	{ type = "wormholes", iconId = 136243 }, -- Engineering Wormholes
 	{ type = "item_teleports", iconId = 133655 }, -- Item Teleports
 	-- Class Teleports
 	{ id = 1, type = "flyout", iconId = 237509, subtype = "mage" }, -- Teleport (Mage) (Horde)
@@ -178,23 +178,23 @@ local tpTable = {
 	{ id = 50977, type = "spell" }, -- Death Gate (Death Knight)
 	{ id = 18960, type = "spell" }, -- Teleport: Moonglade (Druid)
 	{ id = 193753, type = "spell" }, -- Dreamwalk (Druid) (replaces Teleport: Moonglade)
-	-- Racials
-	{ id = 312370, type = "spell" }, -- Make Camp (Vulpera)
-	{ id = 312372, type = "spell" }, -- Return to Camp (Vulpera)
-	{ id = 265225, type = "spell" }, -- Mole Machine (Dark Iron Dwarf)
+	-- -- Racials
+	-- { id = 312370, type = "spell" }, -- Make Camp (Vulpera)
+	-- { id = 312372, type = "spell" }, -- Return to Camp (Vulpera)
+	-- { id = 265225, type = "spell" }, -- Mole Machine (Dark Iron Dwarf)
 
 	-- Dungeon/Raid Teleports
-	{ id = 230, type = "flyout", iconId = 574788, name = L["Cataclysm"], subtype = "path" }, -- Hero's Path: Cataclysm
+	-- { id = 230, type = "flyout", iconId = 574788, name = L["Cataclysm"], subtype = "path" }, -- Hero's Path: Cataclysm
 	{ id = 84, type = "flyout", iconId = 328269, name = L["Mists of Pandaria"], subtype = "path" }, -- Hero's Path: Mists of Pandaria
-	{ id = 96, type = "flyout", iconId = 1413856, name = L["Warlords of Draenor"], subtype = "path" }, -- Hero's Path: Warlords of Draenor
-	{ id = 224, type = "flyout", iconId = 1260827, name = L["Legion"], subtype = "path" }, -- Hero's Path: Legion
-	{ id = 223, type = "flyout", iconId = 1869493, name = L["Battle for Azeroth"], subtype = "path" }, -- Hero's Path: Battle for Azeroth
-	{ id = 220, type = "flyout", iconId = 236798, name = L["Shadowlands"], subtype = "path" }, -- Hero's Path: Shadowlands
-	{ id = 222, type = "flyout", iconId = 4062765, name = L["Shadowlands Raids"], subtype = "path" }, -- Hero's Path: Shadowlands Raids
-	{ id = 227, type = "flyout", iconId = 4640496, name = L["Dragonflight"], subtype = "path" }, -- Hero's Path: Dragonflight
-	{ id = 231, type = "flyout", iconId = 5342925, name = L["Dragonflight Raids"], subtype = "path" }, -- Hero's Path: Dragonflight Raids
-	{ id = 232, type = "flyout", iconId = 5872031, name = L["The War Within"], subtype = "path" }, -- Hero's Path: The War Within
-	{ id = 242, type = "flyout", iconId = 6392630, name = L["The War Within Raids"], subtype = "path", currentExpansion=true }, -- Hero's Path: The War Within Raids
+	-- { id = 96, type = "flyout", iconId = 1413856, name = L["Warlords of Draenor"], subtype = "path" }, -- Hero's Path: Warlords of Draenor
+	-- { id = 224, type = "flyout", iconId = 1260827, name = L["Legion"], subtype = "path" }, -- Hero's Path: Legion
+	-- { id = 223, type = "flyout", iconId = 1869493, name = L["Battle for Azeroth"], subtype = "path" }, -- Hero's Path: Battle for Azeroth
+	-- { id = 220, type = "flyout", iconId = 236798, name = L["Shadowlands"], subtype = "path" }, -- Hero's Path: Shadowlands
+	-- { id = 222, type = "flyout", iconId = 4062765, name = L["Shadowlands Raids"], subtype = "path" }, -- Hero's Path: Shadowlands Raids
+	-- { id = 227, type = "flyout", iconId = 4640496, name = L["Dragonflight"], subtype = "path" }, -- Hero's Path: Dragonflight
+	-- { id = 231, type = "flyout", iconId = 5342925, name = L["Dragonflight Raids"], subtype = "path" }, -- Hero's Path: Dragonflight Raids
+	-- { id = 232, type = "flyout", iconId = 5872031, name = L["The War Within"], subtype = "path" }, -- Hero's Path: The War Within
+	-- { id = 242, type = "flyout", iconId = 6392630, name = L["The War Within Raids"], subtype = "path", currentExpansion=true }, -- Hero's Path: The War Within Raids
 }
 
 local GetItemCount = C_Item.GetItemCount
@@ -271,9 +271,9 @@ local function setToolTip(self, type, id, hs)
 		local name = GetFlyoutInfo(id)
 		GameTooltip:SetText(name, 1, 1, 1)
 	elseif type == "profession" then
-		local professionInfo = C_TradeSkillUI.GetProfessionInfoBySkillLineID(id)
-		if professionInfo then
-			GameTooltip:SetText(professionInfo.professionName, 1, 1, 1)
+		local professionName = C_TradeSkillUI.GetTradeSkillDisplayName(id)
+		if professionName then
+			GameTooltip:SetText(professionName, 1, 1, 1)
 		end
 	elseif type == "seasonalteleport" then
 		local currExpID = GetExpansionLevel()
@@ -309,7 +309,7 @@ local function createCooldownFrame(frame)
 		end
 		local start, duration, enabled
 		if type == "toy" or type == "item" then
-			start, duration, enabled = C_Item.GetItemCooldown(id)
+			start, duration, enabled = C_Container.GetItemCooldown(id)
 		else
 			local cooldown = C_Spell.GetSpellCooldown(id)
 			start = cooldown.startTime
@@ -573,47 +573,47 @@ function tpm:UpdateAvailableSeasonalTeleports()
 	local motherlode = factionData.motherlode
 
 	local seasonalTeleports = {
-		-- TWW S1
-		[1] = {
-			[353] = siegeOfBoralus, -- Siege of Boralus has two spells one for alliance and one for horde
-			[375] = 354464, -- Mists
-			[376] = 354462, -- Necrotic Wake
-			[501] = 445269, -- Stonevault
-			[502] = 445416, -- City of Threads
-			[503] = 445417, -- Ara Ara
-			[505] = 445414, -- The Dawnbreaker
-			[507] = 445424, -- Grim Batol
-		},
-		-- TWW S2
-		[2] = {
-			[247] = motherlode, -- The MOTHERLODE!!
-			[370] = 373274, -- Operation: Mechagon - Workshop
-			[382] = 354467, -- Theater of Pain
-			[499] = 445444, -- Priory of the Sacred Flame
-			[500] = 445443, -- The Rookery
-			[504] = 445441, -- Darkflame Cleft
-			[506] = 445440, -- Cinderbrew Meadery
-			[525] = 1216786, -- Operation: Floodgate
-		},
-		-- TWW S3
-		[3] = {
-			[499] = 445444, -- Priory of the Sacred Flame
-			[542] = 1237215, -- Eco-Dome Al'dani
-			[378] = 354465, -- Halls of Atonement
-			[525] = 1216786, -- Operation: Floodgate
-			[503] = 445417, -- Ara-Kara, City of Echoes
-			[392] = 367416, -- Tazavesh: So'leah's Gambit
-			-- [391] = 367416, -- Tazavesh: Streets of Wonder
-			[505] = 445414, -- The Dawnbreaker
-		},
+		-- -- TWW S1
+		-- [1] = {
+		-- 	[353] = siegeOfBoralus, -- Siege of Boralus has two spells one for alliance and one for horde
+		-- 	[375] = 354464, -- Mists
+		-- 	[376] = 354462, -- Necrotic Wake
+		-- 	[501] = 445269, -- Stonevault
+		-- 	[502] = 445416, -- City of Threads
+		-- 	[503] = 445417, -- Ara Ara
+		-- 	[505] = 445414, -- The Dawnbreaker
+		-- 	[507] = 445424, -- Grim Batol
+		-- },
+		-- -- TWW S2
+		-- [2] = {
+		-- 	[247] = motherlode, -- The MOTHERLODE!!
+		-- 	[370] = 373274, -- Operation: Mechagon - Workshop
+		-- 	[382] = 354467, -- Theater of Pain
+		-- 	[499] = 445444, -- Priory of the Sacred Flame
+		-- 	[500] = 445443, -- The Rookery
+		-- 	[504] = 445441, -- Darkflame Cleft
+		-- 	[506] = 445440, -- Cinderbrew Meadery
+		-- 	[525] = 1216786, -- Operation: Floodgate
+		-- },
+		-- -- TWW S3
+		-- [3] = {
+		-- 	[499] = 445444, -- Priory of the Sacred Flame
+		-- 	[542] = 1237215, -- Eco-Dome Al'dani
+		-- 	[378] = 354465, -- Halls of Atonement
+		-- 	[525] = 1216786, -- Operation: Floodgate
+		-- 	[503] = 445417, -- Ara-Kara, City of Echoes
+		-- 	[392] = 367416, -- Tazavesh: So'leah's Gambit
+		-- 	-- [391] = 367416, -- Tazavesh: Streets of Wonder
+		-- 	[505] = 445414, -- The Dawnbreaker
+		-- },
 	}
 
-	for _, mapId in ipairs(C_ChallengeMode.GetMapTable()) do
-		local spellID = seasonalTeleports[tpm.settings.current_season][mapId]
-		if spellID and IsSpellKnown(spellID) then
-			table.insert(availableSeasonalTeleports, spellID)
-		end
-	end
+	-- for _, mapId in ipairs(C_ChallengeMode.GetMapTable()) do
+	-- 	local spellID = seasonalTeleports[tpm.settings.current_season][mapId]
+	-- 	if spellID and IsSpellKnown(spellID) then
+	-- 		table.insert(availableSeasonalTeleports, spellID)
+	-- 	end
+	-- end
 end
 
 function tpm:checkQuestCompletion(quest)
