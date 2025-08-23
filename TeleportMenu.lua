@@ -779,7 +779,7 @@ function tpm:updateHearthstone()
 
 	if db["Teleports:Hearthstone"] == "rng" then
 		local rng = math.random(#tpm.AvailableHearthstones)
-		hearthstoneButton:SetNormalTexture(1669494) -- misc_rune_pvp_random
+		hearthstoneButton:SetNormalTexture(237284) -- inv_misc_dice_01
 		hearthstoneButton:SetAttribute("type", "toy")
 		hearthstoneButton:SetAttribute("toy", tpm.AvailableHearthstones[rng])
 	elseif db["Teleports:Hearthstone"] == "disabled" then
@@ -850,7 +850,7 @@ local function createAnchors()
 			teleport.type = "toy"
 			known = true
 			if db["Teleports:Hearthstone"] == "rng" then
-				texture = 1669494 -- misc_rune_pvp_random
+				texture = 237284 -- inv_misc_dice_01
 				teleport.id = tpm:GetRandomHearthstone()
 			else
 				teleport.id = db["Teleports:Hearthstone"]
