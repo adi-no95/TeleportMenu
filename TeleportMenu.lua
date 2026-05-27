@@ -182,8 +182,8 @@ local shortNames = {
 local tpTable = {
 	-- Hearthstones
 	{ id = 6948, type = "item", hearthstone = true }, -- Hearthstone
-	{ id = 1233637, type = "housing", faction = "Alliance"}, -- Teleport Home (Alliance House)
-	{ id = 1233637, type = "housing", faction = "Horde"}, -- Teleport Home (Horde House)
+	-- { id = 1233637, type = "housing", faction = "Alliance"}, -- Teleport Home (Alliance House)
+	-- { id = 1233637, type = "housing", faction = "Horde"}, -- Teleport Home (Horde House)
 	{ id = 556, type = "spell" }, -- Astral Recall (Shaman)
 	-- { id = 110560, type = "toy", quest = { 34378, 34586 } }, -- Garrison Hearthstone
 	-- { id = 140192, type = "toy", quest = { 44184, 44663 } }, -- Dalaran Hearthstone
@@ -309,11 +309,11 @@ local function createCooldownFrame(frame)
 		local start, duration, enabled
 		if type == "toy" or type == "item" then
 			start, duration, enabled = C_Container.GetItemCooldown(id)
-		elseif type == "housing" then
-			local cdInfo = C_Housing.GetVisitCooldownInfo()
-			start = cdInfo.startTime
-			duration = cdInfo.duration
-			enabled = cdInfo.isEnabled
+		-- elseif type == "housing" then
+		-- 	local cdInfo = C_Housing.GetVisitCooldownInfo()
+		-- 	start = cdInfo.startTime
+		-- 	duration = cdInfo.duration
+		-- 	enabled = cdInfo.isEnabled
 		else
 			local cooldown = C_Spell.GetSpellCooldown(id)
 			start = cooldown.startTime
@@ -1002,15 +1002,15 @@ local function createAnchors()
 				buttonsFrameLeft.hearthstoneButton = button
 			end
 			buttonsFrameLeft:IncrementButtons()
-		elseif teleport.type == "housing" and C_Housing and C_Housing.HasHousingExpansionAccess() then
-			local playerFaction = UnitFactionGroup("player")
-			if tpm.Housing:HasAPlot() and tpm.Housing:GetActiveHousingButtons() == 0 and (#houseData == 1 or playerFaction == teleport.faction) then -- only 1 house for now, fix more
-				local button = tpm.Housing:CreateSecureHousingButton(teleport.faction)
-				button:SetParent(buttonsFrameLeft)
-				local yOffset = -globalHeight * buttonsFrameLeft:GetButtonAmount()
-				button:SetPoint("LEFT", buttonsFrameLeft, "TOPRIGHT", 0, yOffset)
-				buttonsFrameLeft:IncrementButtons()
-			end
+		-- elseif teleport.type == "housing" and C_Housing and C_Housing.HasHousingExpansionAccess() then
+		-- 	local playerFaction = UnitFactionGroup("player")
+		-- 	if tpm.Housing:HasAPlot() and tpm.Housing:GetActiveHousingButtons() == 0 and (#houseData == 1 or playerFaction == teleport.faction) then -- only 1 house for now, fix more
+		-- 		local button = tpm.Housing:CreateSecureHousingButton(teleport.faction)
+		-- 		button:SetParent(buttonsFrameLeft)
+		-- 		local yOffset = -globalHeight * buttonsFrameLeft:GetButtonAmount()
+		-- 		button:SetPoint("LEFT", buttonsFrameLeft, "TOPRIGHT", 0, yOffset)
+		-- 		buttonsFrameLeft:IncrementButtons()
+		-- 	end
 		elseif teleport.type == "wormholes" then
 			local created = tpm:CreateWormholeFlyout(teleport)
 			if created then
@@ -1064,7 +1064,7 @@ function tpm:ReloadFrames()
 	for _, secureButton in ipairs(secureButtons) do
 		secureButton:Recycle()
 	end
-	tpm.Housing:RecycleHousingButtons()
+	-- tpm.Housing:RecycleHousingButtons()
 
 	if TeleportMeButtonsFrameRight then
 		TeleportMeButtonsFrameRight.reload = true
@@ -1095,8 +1095,8 @@ SlashCmdList["TPMENU"] = function(msg)
 		Settings.OpenToCategory(tpm:GetOptionsCategory())
 	elseif msg == "filters" then
 		Settings.OpenToCategory(tpm:GetOptionsCategory(msg))
-	elseif msg == "housing" then
-		tpm.Housing:DumpHouseData()
+	-- elseif msg == "housing" then
+	-- 	tpm.Housing:DumpHouseData()
 	else
 		print(APPEND .. " unknown command: " .. msg)
 	end
@@ -1146,7 +1146,7 @@ function tpm:Setup()
 	tpm:UpdateAvailableWormholes()
 	tpm:UpdateAvailableSeasonalTeleports()
 	tpm:UpdateAvailableItemTeleports()
-	tpm:LoadHouses()
+	-- tpm:LoadHouses()
 
 	if
 		db["Teleports:Hearthstone"]
