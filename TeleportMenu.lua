@@ -254,7 +254,7 @@ local function setToolTip(self, type, id, hs)
 	GameTooltip:SetOwner(self, "ANCHOR_NONE")
 	local yOffset = globalHeight / 2
 	GameTooltip:SetPoint("BOTTOMLEFT", TeleportMeButtonsFrame, "TOPRIGHT", 0, yOffset)
-	if hs and db["Teleports:Hearthstone"] and db["Teleports:Hearthstone"] == "rng" then
+	if hs and db["Teleports:Hearthstone"] and db["Teleports:Hearthstone"] == "rng" and #tpm.AvailableHearthstones > 0 then
 		local bindLocation = GetBindLocation()
 		GameTooltip:SetText(L["Random Hearthstone"], 1, 1, 1)
 		GameTooltip:AddLine(L["Random Hearthstone Tooltip"], 1, 1, 1)
@@ -777,7 +777,7 @@ function tpm:updateHearthstone()
 		return
 	end
 
-	if db["Teleports:Hearthstone"] == "rng" then
+	if db["Teleports:Hearthstone"] == "rng" and #tpm.AvailableHearthstones > 0 then
 		local rng = math.random(#tpm.AvailableHearthstones)
 		hearthstoneButton:SetNormalTexture(237284) -- inv_misc_dice_01
 		hearthstoneButton:SetAttribute("type", "toy")
@@ -814,7 +814,7 @@ local function createAnchors()
 			TeleportMeButtonsFrame:Hide()
 			return
 		end
-		if TeleportMeButtonsFrame:IsVisible() and db["Teleports:Hearthstone"] and db["Teleports:Hearthstone"] == "rng" then
+		if TeleportMeButtonsFrame:IsVisible() and db["Teleports:Hearthstone"] and db["Teleports:Hearthstone"] == "rng" and #tpm.AvailableHearthstones > 0 then
 			local rng = tpm:GetRandomHearthstone()
 			TeleportMeButtonsFrame.hearthstoneButton:SetAttribute("toy", rng)
 		end
@@ -845,11 +845,11 @@ local function createAnchors()
 		local known
 
 		-- Checks and overwrites
-		if showHearthstone and teleport.hearthstone and db["Teleports:Hearthstone"] ~= "none" then -- Overwrite main HS with user set HS
+		if showHearthstone and teleport.hearthstone and db["Teleports:Hearthstone"] ~= "none" and not( db["Teleports:Hearthstone"] == "rng" and #tpm.AvailableHearthstones == 0) then -- Overwrite main HS with user set HS
 			tpm:DebugPrint("Overwriting main HS with user set HS")
 			teleport.type = "toy"
 			known = true
-			if db["Teleports:Hearthstone"] == "rng" then
+			if db["Teleports:Hearthstone"] == "rng" and #tpm.AvailableHearthstones > 0 then
 				texture = 237284 -- inv_misc_dice_01
 				teleport.id = tpm:GetRandomHearthstone()
 			else
@@ -1004,7 +1004,7 @@ function tpm:Setup()
 
 	if
 		db["Teleports:Hearthstone"]
-		and db["Teleports:Hearthstone"] ~= "rng"
+		and (db["Teleports:Hearthstone"] ~= "rng" and #tpm.AvailableHearthstones > 0)
 		and db["Teleports:Hearthstone"] ~= "none"
 		and db["Teleports:Hearthstone"] ~= "disabled"
 		and not PlayerHasToy(db["Teleports:Hearthstone"] --[[@as integer]])
