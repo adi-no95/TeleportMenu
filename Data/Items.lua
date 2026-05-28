@@ -48,6 +48,7 @@ tpm.ItemTeleports = {
 	[95567] = UnitFactionGroup("player") == "Alliance", -- Kirin Tor Beacon
 	[95568] = UnitFactionGroup("player") == "Horde", -- Sunreaver Beacon
 	[103678] = true, -- Time-Lost Artifact
+	[104110] = true, -- Curious Bronze Timepiece - Timeless Isle QuestItem
 	--[117389] = true, -- Draenor Archaeologist's Lodestone
 	--[118662] = true, -- Bladespire Relic
 	--[118663] = true, -- Relic of Karabor
